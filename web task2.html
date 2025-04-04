@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8B5E3B;
+            color: #333;
+        }
+        header {
+            background: #4a90e2;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            transition: opacity 0.3s;
+        }
+        nav ul li a:hover {
+            opacity: 0.8;
+        }
+        .hero {
+            background: #E0C097;
+            text-align: center;
+            padding: 150px 20px;
+            color: #222;
+        }
+        .hero h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 22px;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+        .cta-button {
+            background: #ff6f61;
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        .cta-button:hover {
+            background: #e05245;
+        }
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .content-box {
+            background: white;
+            padding: 40px;
+            margin: 30px auto;
+            border-radius: 12px;
+            max-width: 850px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        #services ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        #services ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        form input, form textarea, form button {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 14px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            display: block;
+        }
+        button {
+            background: #4a90e2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #357ab8;
+        }
+        footer {
+            background: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">WebTech</div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Unlock Your Potential</h1>
+        <p>Partner with BrightTech to accelerate innovation and growth through smart solutions.</p>
+        <a href="#contact" class="cta-button">Let's Chat</a>
+    </section>
+
+    <section id="about" class="content-box">
+        <h2>Who We Are</h2>
+        <p>At BrightTech, we're passionate about creating technology that inspires progress and powers digital transformation.</p>
+    </section>
+
+    <section id="services" class="content-box">
+        <h2>What We Do</h2>
+        <ul>
+            <li>Mobile App Development</li>
+            <li>Data Analytics & AI</li>
+            <li>Cloud Integration Services</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="content-box">
+        <h2>Get in Touch</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BrightTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>
